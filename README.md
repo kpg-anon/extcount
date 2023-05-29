@@ -9,7 +9,7 @@
 - argparse ≥1.4.0
 
 ## 📥 Installation 📥
-1. Download the script [manually](https://raw.githubusercontent.com/kpg-anon/extcount/main/extcount.py) or clone the repository:
+1. Download the script [manually](https://raw.githubusercontent.com/kpg-anon/extcount/master/extcount.py) or clone the repository:
     ```bash
     git clone https://github.com/kpg-anon/extcount
     ```
