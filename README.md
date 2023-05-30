@@ -39,6 +39,5 @@ This will print out the total number of .jpg and .mp4 files in the specified fol
 
 ## TODO
 
-- [ ] fix total_files formatting
 - [ ] add optional flag to specify depth
 - [ ] add functionality to print extension counts by subfolder

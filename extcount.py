@@ -64,17 +64,17 @@ if __name__ == "__main__":
         total_files += count
         total_size_MB += size_MB
         if size_MB >= 1024:
-            console.print(Panel(f"[ext]{ext}[/ext] [divider]|[/divider] [num_files]{count}[/num_files] [files]files[/files] [divider]|[/divider] [total_size]total size:[/total_size] [size_gb]{size_GB:.2f} GB[/size_gb]", border_style="frame"))
+            console.print(Panel(f"[ext]{ext}[/ext] [divider]|[/divider] [num_files]{count:,}[/num_files] [files]files[/files] [divider]|[/divider] [total_size]total size:[/total_size] [size_gb]{size_GB:.2f} GB[/size_gb]", border_style="frame"))
         elif size_MB < 1:
-            console.print(Panel(f"[ext]{ext}[/ext] [divider]|[/divider] [num_files]{count}[/num_files] [files]files[/files] [divider]|[/divider] [total_size]total size:[/total_size] [size_kb]{size_KB:.2f} KB[/size_kb]", border_style="frame"))
+            console.print(Panel(f"[ext]{ext}[/ext] [divider]|[/divider] [num_files]{count:,}[/num_files] [files]files[/files] [divider]|[/divider] [total_size]total size:[/total_size] [size_kb]{size_KB:.2f} KB[/size_kb]", border_style="frame"))
         else:
-            console.print(Panel(f"[ext]{ext}[/ext] [divider]|[/divider] [num_files]{count}[/num_files] [files]files[/files] [divider]|[/divider] [total_size]total size:[/total_size] [size]{size_MB:.2f} MB[/size]", border_style="frame"))
+            console.print(Panel(f"[ext]{ext}[/ext] [divider]|[/divider] [num_files]{count:,}[/num_files] [files]files[/files] [divider]|[/divider] [total_size]total size:[/total_size] [size]{size_MB:.2f} MB[/size]", border_style="frame"))
 
     total_size_GB = total_size_MB / 1024
     total_size_KB = total_size_MB * 1024
     if total_size_MB >= 1024:
-        console.print(Panel(f"[total_files]{total_files}[/total_files] [total_files_label]Total files[/total_files_label] [divider]|[/divider] [total_size]size:[/total_size] [size_gb]{total_size_GB:.2f} GB[/size_gb]", border_style="frame"))
+        console.print(Panel(f"[total_files]{total_files:,}[/total_files] [total_files_label]Total files[/total_files_label] [divider]|[/divider] [total_size]size:[/total_size] [size_gb]{total_size_GB:.2f} GB[/size_gb]", border_style="frame"))
     elif total_size_MB < 1:
-        console.print(Panel(f"[total_files]{total_files}[/total_files] [total_files_label]Total files[/total_files_label] [divider]|[/divider] [total_size]size:[/total_size] [size_kb]{total_size_KB:.2f} KB[/size_kb]", border_style="frame"))
+        console.print(Panel(f"[total_files]{total_files:,}[/total_files] [total_files_label]Total files[/total_files_label] [divider]|[/divider] [total_size]size:[/total_size] [size_kb]{total_size_KB:.2f} KB[/size_kb]", border_style="frame"))
     else:
-        console.print(Panel(f"[total_files]{total_files}[/total_files] [total_files_label]Total files[/total_files_label] [divider]|[/divider] [total_size]size:[/total_size] [size]{total_size_MB:.2f} MB[/size]", border_style="frame"))
+        console.print(Panel(f"[total_files]{total_files:,}[/total_files] [total_files_label]Total files[/total_files_label] [divider]|[/divider] [total_size]size:[/total_size] [size]{total_size_MB:.2f} MB[/size]", border_style="frame"))
