@@ -25,7 +25,7 @@
     ```
 
 ## 💻 Usage 💻
-By default, the current working directory will be used if none if none is provided. The optional `-e` flag is used to specify one or multiple comma-separated extensions.
+By default, the current working directory will be used if none is provided. The optional `-e` flag is used to specify one or multiple comma-separated extensions.
 
 Example:
 
